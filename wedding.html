@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wedding Gallery</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ad-gallery.js"></script>
+
+<!-- adding fancybox effect -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+
+<script type="text/javascript">
+
+	  /* ad galery init */
+
+/*  $(function() {
+/*    $('img.image1').data('ad-desc', 'Whoa! This description is set through elm.data("ad-desc") instead of using the longdesc attribute.<br>And it contains <strong>H</strong>ow <strong>T</strong>o <strong>M</strong>eet <strong>L</strong>adies... <em>What?</em> That aint what HTML stands for? Man...');
+/*    $('img.image1').data('ad-title', 'Title through $.data');
+/*   $('img.image4').data('ad-desc', 'This image is wider than the wrapper, so it has been scaled down');
+/*    $('img.image5').data('ad-desc', 'This image is higher than the wrapper, so it has been scaled down');
+/*    var galleries = $('.ad-gallery').adGallery();
+/*    setTimeout(function() {
+/*      galleries[0].addImage("images/Weddings/thumbs/32.jpg", "images/Weddings/SelectSize/32.jpg");
+/*    }, 1000);
+/*    setTimeout(function() {
+/*      galleries[0].addImage("images/Weddings/thumbs/studio-4.jpg", "images/Weddings/SelectSize/studio-4.jpg");
+/*    }, 2000);
+/*    setTimeout(function() {
+/*      galleries[0].addImage("images/Weddings/thumbs/wedding-4.jpg", "images/Weddings/SelectSize/wedding-4.jpg");
+/*    }, 3000);
+/*    setTimeout(function() {
+/*      galleries[0].removeImage(1);
+/*    }, 4000);
+/*    
+/*	
+/*	
+/* open fancy box with a click to the picture */
+/*  $(document).ready(function(){
+/*    /* for jQuery 1.7+ live is no longer supported */
+/*    $(document).on("click", ".ad-image", function() {
+/*      $.fancybox.open({
+/*        href : $(this).find("img").attr("src"),
+/*        closeBtn: false,
+        closeClick : true,
+        openEffect : 'elastic',
+        openSpeed  : 150,
+        closeEffect : 'elastic',
+        closeSpeed  : 150,
+        helpers : {
+          overlay : null
+        }
+      });
+    });
+  });
+  
+	
+    $('#switch-effect').change(
+      function() {
+        galleries[0].settings.effect = $(this).val();
+        return false;
+      }
+    );
+    $('#toggle-slideshow').click(
+      function() {
+        galleries[0].slideshow.toggle();
+        return false;
+      }
+    );
+    $('#toggle-description').click(
+      function() {
+        if(!galleries[0].settings.description_wrapper) {
+          galleries[0].settings.description_wrapper = $('#descriptions');
+        } else {
+          galleries[0].settings.description_wrapper = false;
+        }
+        return false;
+      }
+    );
+  });
+  
+  
+  */
+  
+/* testing code from online site jasmin.anw.at/tauchen/projekte/druck_kammer_bilder_1.html */
+
+  /* ad galery init */
+  $(function() {
+    var galleries = $('.ad-gallery').adGallery({
+      loader_image: '/images/loader.gif',
+      description_wrapper: $('#descriptions'),
+	  display_next_and_prev: true,
+	  display_back_and_forward:true,
+	  slideshow:{
+		stop_on_scroll:false
+			  }
+    });
+    galleries[0].settings.slideshow.speed = 3000;
+     galleries[0].settings.effect = 'fade'; 
+  });
+
+
+</script>
+  
+  
+  
+  </script>
+</head>
+
+<body>
+	<div id="wrapwed">
+    	<div class="headerInnerwed">&nbsp;</div>
+   	  <div id="bodyContentPhotos">
+        	<div id="container">
+            <div class="gallery-logo">
+       		  <a href="index.html"><img src="images/WeddinglogoGallery.png" lt="Logo" /></a><br />
+				<br />
+                <br />
+				       		    
+				<div id="menuwrapper">
+       		    <ul class = "vert-menu">
+				</p>
+							<li id="wedding"><a href="index.html">Home</a></li>
+							<li id="blog"><a href="blog.html">Blog</a></li>
+							<li id="tips"><a href="about.html">About Us</a></li>
+							<li id="packages"><a href="packages.html">Photo Packages</a></li>
+							<li id="contacts"><a href="contact.php">Contact Us</a></li>
+            </div>
+			</div>
+	   <div id="gallery" class="ad-gallery">
+       
+      <div class="ad-image-wrapper">
+      </div>
+      <div class="ad-controls">
+      </div>
+      <div class="ad-nav">
+        <div class="ad-thumbs">
+          <ul class="ad-thumb-list">
+		  <li><a href= "images/Weddings/SelectSize/wedding-4.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/wedding-4.jpg" class="image0"></a></li>
+		  <li><a href= "images/Weddings/SelectSize/27.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/27.jpg" class="image0"></a></li>
+            <li><a href= "images/Weddings/SelectSize/01.png" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/01.jpg" class="image0"></a></li>
+			<li><a href="images/Weddings/SelectSize/1.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/1.jpg" class="image2"></a></li> 
+            <li><a href="images/Weddings/SelectSize/2.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/2.jpg" class="image3"></a></li>
+			<li><a href="images/Weddings/SelectSize/52.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/52.jpg" class="image41"></a></li>
+            <li><a href="images/Weddings/SelectSize/3.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/3.jpg"  class="image4"></a></li>
+            <li><a href="images/Weddings/SelectSize/4.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/4.jpg" class="image5"></a></li>
+            <li><a href="images/Weddings/SelectSize/5.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/5.jpg" class="image6"></a></li>
+            <li><a href="images/Weddings/SelectSize/7.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/7.jpg" class="image8"></a></li>
+            <li><a href="images/Weddings/SelectSize/8.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/8.jpg" class="image9"></a></li>
+            <li><a href="images/Weddings/SelectSize/9.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/9.jpg" class="image10"></a></li>
+			<li><a href="images/Weddings/SelectSize/10.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/10.jpg" class="image11"></a></li>
+            <li><a href="images/Weddings/SelectSize/11.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/11.jpg" class="image12"></a></li>
+            <li><a href="images/Weddings/SelectSize/12.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/12.jpg" class="image13"></a></li>
+            <li><a href="images/Weddings/SelectSize/15.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/15.jpg" class="image14"></a></li>
+            <li><a href="images/Weddings/SelectSize/22.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/22.jpg" class="image15"></a></li>
+            <li><a href="images/Weddings/SelectSize/26.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/26.jpg" class="image16"></a></li>
+			<li><a href="images/Weddings/SelectSize/28.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/28.jpg" class="image18"></a></li>
+			<li><a href="images/Weddings/SelectSize/53.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/53.jpg" class="image41"></a></li>
+            <li><a href="images/Weddings/SelectSize/29.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/29.jpg" class="image19"></a></li>
+            <li><a href="images/Weddings/SelectSize/30.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/30.jpg" class="image20"></a></li>
+            <li><a href="images/Weddings/SelectSize/31.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/31.jpg" class="image21"></a></li>
+            <li><a href="images/Weddings/SelectSize/32.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/32.jpg" class="image22"></a></li>
+            <li><a href="images/Weddings/SelectSize/33.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/33.jpg" class="image23"></a></li>
+            <li><a href="images/Weddings/SelectSize/34.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/34.jpg" class="image24"></a></li>
+            <li><a href="images/Weddings/SelectSize/35.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/35.jpg" class="image25"></a></li>
+			<li><a href="images/Weddings/SelectSize/36.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/36.jpg" class="image26"></a></li>
+            <li><a href="images/Weddings/SelectSize/37.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/37.jpg" class="image27"></a></li>
+            <li><a href="images/Weddings/SelectSize/38.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/38.jpg" class="image28"></a></li>
+            <li><a href="images/Weddings/SelectSize/39.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/39.jpg" class="image29"></a></li>
+            <li><a href="images/Weddings/SelectSize/40.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/40.jpg" class="image30"></a></li>
+            <li><a href="images/Weddings/SelectSize/41.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/41.jpg" class="image31"></a></li>
+			<li><a href="images/Weddings/SelectSize/42.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/42.jpg" class="image32"></a></li>
+            <li><a href="images/Weddings/SelectSize/43.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/43.jpg" class="image33"></a></li>
+            <li><a href="images/Weddings/SelectSize/44.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/44.jpg" class="image34"></a></li>
+            <li><a href="images/Weddings/SelectSize/45.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/45.jpg" class="image35"></a></li>
+            <li><a href="images/Weddings/SelectSize/46.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/46.jpg" class="image36"></a></li>
+			<li><a href="images/Weddings/SelectSize/47.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/47.jpg" class="image37"></a></li>
+            <li><a href="images/Weddings/SelectSize/48.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/48.jpg" class="image38"></a></li>
+            <li><a href="images/Weddings/SelectSize/49.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/49.jpg" class="image39"></a></li>
+            <li><a href="images/Weddings/SelectSize/50.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/50.jpg" class="image40"></a></li>
+            <li><a href="images/Weddings/SelectSize/51.jpg" data-fancybox-group="gallery"><img src="images/Weddings/thumbs/51.jpg" class="image41"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+            
+      </div>
+        <div id="footerContainer">&copy;Copyright 2012 Kate Dwek Photos .All Right Reserved</div>
+    </div>
+</body>
+</html>
